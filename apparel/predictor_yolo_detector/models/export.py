@@ -13,10 +13,10 @@ sys.path.append('./')  # to run '$ python *.py' files in subdirectories
 import torch
 import torch.nn as nn
 
-from com_ineuron_apparel.predictor_yolo_detector.models import common
-from com_ineuron_apparel.predictor_yolo_detector.models.experimental import attempt_load
-from com_ineuron_apparel.predictor_yolo_detector.utils.activations import Hardswish
-from com_ineuron_apparel.predictor_yolo_detector.utils.general import set_logging, check_img_size
+from apparel.predictor_yolo_detector.models import common
+from apparel.predictor_yolo_detector.models.experimental import attempt_load
+from apparel.predictor_yolo_detector.utils.activations import Hardswish
+from apparel.predictor_yolo_detector.utils.general import set_logging, check_img_size
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

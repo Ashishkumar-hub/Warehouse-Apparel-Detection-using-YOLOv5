@@ -3,7 +3,7 @@ import base64
 
 def decodeImage(imgstring, fileName):
     imgdata = base64.b64decode(imgstring)
-    with open("./com_ineuron_apparel/predictor_yolo_detector/inference/images/" + fileName, 'wb') as f:
+    with open("./apparel/predictor_yolo_detector/inference/images/" + fileName, 'wb') as f:
         f.write(imgdata)
         f.close()
 

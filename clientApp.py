@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify, render_template,Response
 import os
 from flask_cors import CORS, cross_origin
-from com_ineuron_apparel.com_ineuron_utils.utils import decodeImage
-from com_ineuron_apparel.predictor_yolo_detector.detector_test import Detector
+from apparel.utils_.utils import decodeImage
+from apparel.predictor_yolo_detector.detector_test import Detector
 
 # import sys
 # sys.path.insert(0, './com_ineuron_apparel')

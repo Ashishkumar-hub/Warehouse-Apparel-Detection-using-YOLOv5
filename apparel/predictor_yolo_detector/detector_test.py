@@ -9,27 +9,27 @@ import torch.backends.cudnn as cudnn
 from numpy import random
 from PIL import Image
 
-from com_ineuron_apparel.com_ineuron_utils.utils import encodeImageIntoBase64
+from apparel.utils_.utils import encodeImageIntoBase64
 
 import sys
-sys.path.insert(0, 'com_ineuron_apparel/predictor_yolo_detector')
+sys.path.insert(0, 'apparel/predictor_yolo_detector')
 
-from com_ineuron_apparel.predictor_yolo_detector.models.experimental import attempt_load
-from com_ineuron_apparel.predictor_yolo_detector.utils.datasets import LoadStreams, LoadImages
-from com_ineuron_apparel.predictor_yolo_detector.utils.general import (
+from apparel.predictor_yolo_detector.models.experimental import attempt_load
+from apparel.predictor_yolo_detector.utils.datasets import LoadStreams, LoadImages
+from apparel.predictor_yolo_detector.utils.general import (
     check_img_size, non_max_suppression, apply_classifier, scale_coords,
     xyxy2xywh, plot_one_box, strip_optimizer, set_logging)
-from com_ineuron_apparel.predictor_yolo_detector.utils.torch_utils import select_device, load_classifier, \
+from apparel.predictor_yolo_detector.utils.torch_utils import select_device, load_classifier, \
     time_synchronized
 
 
 class Detector():
     def __init__(self, filename):
-        self.weights = "./com_ineuron_apparel/predictor_yolo_detector/best.pt"
+        self.weights = "./apparel/predictor_yolo_detector/best.pt"
         self.conf = float(0.5)
-        self.source = "./com_ineuron_apparel/predictor_yolo_detector/inference/images/"
+        self.source = "./apparel/predictor_yolo_detector/inference/images/"
         self.img_size = int(416)
-        self.save_dir = "./com_ineuron_apparel/predictor_yolo_detector/inference/output"
+        self.save_dir = "./apparel/predictor_yolo_detector/inference/output"
         self.view_img = False
         self.save_txt = False
         self.device = 'cpu'

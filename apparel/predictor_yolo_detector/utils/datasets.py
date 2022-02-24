@@ -14,7 +14,7 @@ from PIL import Image, ExifTags
 from torch.utils.data import Dataset
 from tqdm import tqdm
 
-from com_ineuron_apparel.predictor_yolo_detector.utils.general import xyxy2xywh, xywh2xyxy, \
+from apparel.predictor_yolo_detector.utils.general import xyxy2xywh, xywh2xyxy, \
     torch_distributed_zero_first
 
 help_url = 'https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data'

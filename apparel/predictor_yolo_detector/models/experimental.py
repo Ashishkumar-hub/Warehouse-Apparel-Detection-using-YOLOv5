@@ -4,8 +4,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from com_ineuron_apparel.predictor_yolo_detector.models.common import Conv, DWConv
-from com_ineuron_apparel.predictor_yolo_detector.utils.google_utils import attempt_download
+from apparel.predictor_yolo_detector.models.common import Conv, DWConv
+from apparel.predictor_yolo_detector.utils.google_utils import attempt_download
 
 
 class CrossConv(nn.Module):

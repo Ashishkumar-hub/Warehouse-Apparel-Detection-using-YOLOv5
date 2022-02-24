@@ -6,8 +6,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from com_ineuron_apparel.predictor_yolo_detector.utils.datasets import letterbox
-from com_ineuron_apparel.predictor_yolo_detector.utils.general import non_max_suppression, make_divisible, \
+from apparel.predictor_yolo_detector.utils.datasets import letterbox
+from apparel.predictor_yolo_detector.utils.general import non_max_suppression, make_divisible, \
     scale_coords
 
 
